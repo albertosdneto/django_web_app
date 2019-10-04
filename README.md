@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-| Coluna A                        | Coluna B                     |
+| Column A                        | Column B                     |
 |---------------------------------|------------------------------|
 | ![Home](screenshots/01.png)     | ![Login](screenshots/02.png) |
 | ![Register](screenshots/03.png) | ![User](screenshots/04.png)  |

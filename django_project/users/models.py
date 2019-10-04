@@ -10,8 +10,12 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self):
-        super().save()
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None):  # Mantenha a mesma assinatura do
+                                   # método que você está sobrescrevendo
+
+        super().save(force_insert=False, force_update=False, using=None,
+                     update_fields=None)
 
         img = Image.open(self.image.path)
 

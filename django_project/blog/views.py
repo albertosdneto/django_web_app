@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.contrib.auth.models import User
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import (
     ListView,
     DetailView,
@@ -8,7 +8,12 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
+
 from .models import Post
+
+
+# https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#referencing-the-user-model
+User = get_user_model()  # pylint: disable=invalid-name
 
 
 def home(request):

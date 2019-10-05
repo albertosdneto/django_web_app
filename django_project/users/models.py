@@ -14,8 +14,8 @@ class Profile(models.Model):
              update_fields=None):  # Mantenha a mesma assinatura do
                                    # método que você está sobrescrevendo
 
-        super().save(force_insert=False, force_update=False, using=None,
-                     update_fields=None)
+        super().save(force_insert, force_update,
+                     using, update_fields)
 
         img = Image.open(self.image.path)
 

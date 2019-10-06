@@ -1,7 +1,12 @@
-from django.db.models.signals import post_save # Fires a signal when something is created
-from django.contrib.auth.models import User
-from django.dispatch import receiver # Gets the signal from first line and execute some action
+from django.contrib.auth import get_user_model
+from django.db.models.signals import post_save  # Fires a signal when something is created
+from django.dispatch import receiver  # Gets the signal from first line and execute some action
+
 from .models import Profile
+
+
+# https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#referencing-the-user-model
+User = get_user_model()  # pylint: disable=invalid-name
 
 
 @receiver(post_save, sender=User)

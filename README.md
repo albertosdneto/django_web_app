@@ -30,6 +30,8 @@ git clone https://github.com/albertosdneto/django_web_app.git
 ```
 - Go to the django_project folder and install the requirements:
 ```shell
+cd django_web_app
+
 cd django_project
 
 pip install -r requirements.txt
@@ -43,7 +45,7 @@ EMAIL_PASSWORD = "#####################"
 - Migrate database:
 ```shell
 python manage.py makemigrations
-python manage.pu migrate
+python manage.py migrate
 ```
 - Create Superuser:
 ```shell

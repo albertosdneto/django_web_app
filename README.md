@@ -14,7 +14,7 @@ Building a web app with Django based on the tutorial series by  Corey Schafer th
 - <https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p>
 
 
-## Instalation
+## Installation
 
 - Create a virtual environment with python 3.6. In my case I used conda for that.
 ```shell

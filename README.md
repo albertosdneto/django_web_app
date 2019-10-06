@@ -18,21 +18,21 @@ Building a web app with Django based on the tutorial series by  Corey Schafer th
 
 - Create a virtual environment with python 3.6. In my case I used conda for that.
 ```shell
-	conda create -n blogEnv python=3.6
+conda create -n blogEnv python=3.6
 ```
 - Activate the virtual environment you have just created:
 ```shell
-	conda activate blogEnv
+conda activate blogEnv
 ```
 - Clone the repository:
 ```shell
-	git clone https://github.com/albertosdneto/django_web_app.git
+git clone https://github.com/albertosdneto/django_web_app.git
 ```
 - Go to the django_project folder and install the requirements:
 ```shell
-	cd django_project
+cd django_project
 
-	pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 - Setup environment variables or setup these values inside ```settings.py```:
 ``` python
@@ -42,15 +42,15 @@ EMAIL_PASSWORD = "#####################"
 ```
 - Migrate database:
 ```shell
-	python manage.py makemigrations
-	python manage.pu migrate
+python manage.py makemigrations
+python manage.pu migrate
 ```
 - Create Superuser:
 ```shell
-	python manage.py createsuperuser
+python manage.py createsuperuser
 ```
 - Run the project:
 ```shell
-	python manage.py runserver
+python manage.py runserver
 ```
 - Go to the project url and verify if it is running. Enjoy.

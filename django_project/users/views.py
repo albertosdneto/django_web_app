@@ -20,7 +20,7 @@ def register(request):
 @login_required
 def profile(request):
     u_form = UserUpdateForm(request.POST or None, instance=request.user)
-    p_form = ProfileUpdateForm(request.POST or None, request.FILES,
+    p_form = ProfileUpdateForm(request.POST or None, request.FILES or None,
                                instance=request.user.profile)
 
     if u_form.is_valid() and p_form.is_valid():

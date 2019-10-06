@@ -104,11 +104,13 @@ ENV/
 
 .DS_Store
 *.sqlite3
-media/
+
 *.pyc
 *.db
 *.pid
 
+# Remove users pictures
+profile_pics/
 
 # Environment variables
 environment.txt

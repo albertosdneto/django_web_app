@@ -12,12 +12,14 @@ User = get_user_model()  # pylint: disable=invalid-name
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
-    excerpt = models.TextField(max_length=150, default='Click at the title for more details.')
+    excerpt = models.TextField(
+        max_length=150, default='Click at the title for more details.')
     tags = models.CharField(max_length=100, default='tags')
     published = models.BooleanField(default=True)
     date_posted = models.DateTimeField(default=timezone.now)
     # https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#referencing-the-user-model
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title

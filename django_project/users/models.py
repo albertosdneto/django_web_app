@@ -5,7 +5,8 @@ from PIL import Image
 
 class Profile(models.Model):
     # https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#referencing-the-user-model
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpeg', upload_to='profile_pics')
 
     def __str__(self):

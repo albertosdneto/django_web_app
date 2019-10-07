@@ -1,6 +1,8 @@
 from django.contrib.auth import get_user_model
-from django.db.models.signals import post_save  # Fires a signal when something is created
-from django.dispatch import receiver  # Gets the signal from first line and execute some action
+# Fires a signal when something is created
+from django.db.models.signals import post_save
+# Gets the signal from first line and execute some action
+from django.dispatch import receiver
 
 from .models import Profile
 

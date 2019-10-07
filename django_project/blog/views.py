@@ -53,17 +53,13 @@ class MyPostListView(LoginRequiredMixin, ListView):
     paginate_by = 5
 
     def get_queryset(self):
-        return Post.objects.filter(author=self.request.user).order_by('-date_posted') 
+        return Post.objects.filter(author=self.request.user).order_by('-date_posted')
         # Only show the posts where the author is the user logged in, no matter what he types at URL
         # post_author = get_object_or_404(User, username=self.kwargs.get('username'))
         # if post_author == self.request.user:
-        #     return Post.objects.filter(author=self.request.user).order_by('-date_posted')      
+        #     return Post.objects.filter(author=self.request.user).order_by('-date_posted')
         # else:
         #     return Post.objects.filter(author=self.request.user).order_by('-date_posted')
-
-
-
-
 
 
 class PostDetailView(DetailView):

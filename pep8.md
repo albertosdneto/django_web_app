@@ -297,7 +297,7 @@ _encoding cookie_, porém no Python 2 deve-se usar `# coding: utf-8`. Fechô!? �
   3. _imports_ locais ou da aplicação
 
 - Importações absolutas são recomendadas, dessa forma são mais legíveis e tendem
-  a se comportar melhor (ou pelo menos mensagens de erros melhores) se o systema
+  a se comportar melhor (ou pelo menos mensagens de erros melhores) se o sistema
   de importação está configurado incorretamente (como quando um diretório dentro
   de um pacote acaba em sys.path)
 

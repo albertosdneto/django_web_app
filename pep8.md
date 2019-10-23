@@ -189,7 +189,7 @@ with open('/path/to/some/file/you/want/to/read') as file_1, \
 
 Comentários devem tem 72 caracteres de comprimento
 
-### A linhda deve ser quebrada antes ou depois de um operador binário
+### A linha deve ser quebrada antes ou depois de um operador binário
 
 Para evitar que operadores se espalhem por colunas diferentes na tela e que se
 afastem de seus operandos da linha anterior, evite fazer quebras de linhas após
